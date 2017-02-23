@@ -2,8 +2,6 @@ $ (document).ready(function(){
 
 
 
-
-
   $('#rowThreeSeatOne').hover(
   function () {
     originalText=$(this).text();

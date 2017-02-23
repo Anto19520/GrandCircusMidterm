@@ -2,6 +2,7 @@ $ (document).ready(function(){
 
 
 
+
   $('#rowThreeSeatOne').hover(
   function () {
     originalText=$(this).text();
@@ -96,6 +97,14 @@ $ (document).ready(function(){
     $(this).html('<p>Row: 4<br>Seat: 6</p>');
   },function () {
     $(this).text(originalText);
+=======
+  $( '.seat' ).on({
+    mouseenter: function() {
+      $(this).find(".seatInfo").css("visibility","visible");
+    }, mouseleave: function() {
+      $(this).find(".seatInfo").css("visibility","hidden");
+    }
+>>>>>>> 06cec10170b33e07fc690a0669f436a1e3ff7dda
   });
 
 });

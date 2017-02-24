@@ -39,10 +39,6 @@ body {
 }
 
 .reserved {
-
-}
-
-.seat:hover {
   background-color: #16d09f;
 }
 
@@ -59,6 +55,7 @@ body {
 
 .form {
   visibility: hidden;
+  margin-bottom: 100px;
 }
 
 li {
@@ -77,3 +74,11 @@ footer {
   text-shadow: 0 0 14px #5c7761;
   text-align: center;
 }
+
+.inProgress {
+  background-color: yellow;
+}
+
+/*#seatID {
+  visibility: hidden;
+}*/

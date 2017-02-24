@@ -19,18 +19,26 @@
 }
 
 .seat {
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 5px;
   float: left;
   height: 100%;
   width: 10%;
   margin: 2.5%;
+  border-radius: 5px;
+}
+
+.seat:hover {
+  border: 2px solid #16d09f;
+  zoom: 110%;
+}
+
+.reserved {
+  background-color: #16d09f;
 }
 
 .seatInfo {
   visibility: hidden;
-  background-color: green;
-  zoom: 45%;
 }
 
 .number {
@@ -38,6 +46,14 @@
   float: left;
   width: 10%;
   margin: 2.5%;
+}
+
+.form {
+  visibility: hidden;
+}
+
+li {
+  list-style-type: none;
 }
 
 footer {

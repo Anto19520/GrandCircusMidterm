@@ -7,6 +7,19 @@ body {
   color: #777777;
 }
 
+#instructions {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  min-width: 900px;
+}
+
+#legend {
+  float:right;
+  margin-top: -580px;
+
+}
+
 .container {
   text-align: center;
   margin: auto;
@@ -34,12 +47,19 @@ body {
 }
 
 .seat:hover {
-  border: 2px solid #16d09f;
+  border: 2px solid #b7ffed;
   zoom: 110%;
 }
 
 .reserved {
   background-color: #16d09f;
+
+}
+
+.seat:hover {
+  background-color: #b7ffed;
+  color: white;
+  text-shadow: 0 0 14px #5c7761;
 }
 
 .seatInfo {
@@ -78,7 +98,3 @@ footer {
 .inProgress {
   background-color: yellow;
 }
-
-/*#seatID {
-  visibility: hidden;
-}*/

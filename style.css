@@ -29,6 +29,8 @@
 
 .seatInfo {
   visibility: hidden;
+  background-color: green;
+  zoom: 45%;
 }
 
 .number {

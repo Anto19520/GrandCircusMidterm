@@ -1,6 +1,6 @@
 $ (document).ready(function(){
 =======
-  
+
   $( '.seat' ).on({
     mouseenter: function() {
       $(this).find(".seatInfo").css("visibility","visible");

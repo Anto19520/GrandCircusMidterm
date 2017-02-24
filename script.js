@@ -6,7 +6,9 @@ $ (document).ready(function(){
     }, mouseleave: function() {
       $(this).find(".seatInfo").css("visibility","hidden");
     }
-
   });
 
+  $('.seat').on('click',function(){
+    $('.form').css("visibility","visible");
+  });
 });

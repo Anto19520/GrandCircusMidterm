@@ -32,6 +32,10 @@ body {
   margin: 2.5%;
 }
 
+.seatInfo {
+  visibility: hidden;
+}
+
 .number {
   padding: 5px;
   float: left;

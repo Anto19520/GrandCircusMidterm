@@ -1,5 +1,5 @@
 $ (document).ready(function(){
-  
+
   $( '.seat' ).on({
     mouseenter: function() {
       $(this).find(".seatInfo").css("visibility","visible");
@@ -8,4 +8,7 @@ $ (document).ready(function(){
     }
   });
 
+  $('.seat').on('click',function(){
+    $('.form').css("visibility","visible");
+  });
 });

@@ -31,19 +31,10 @@ $ (document).ready(function(){
 
     reservationList.forEach(function (reservation) {
       $("#currentRes").append("<div>" + reservation.name + " reserved " + seatInfo + "</div>");
-
       seat.find('.seatInfo').append("<div>"+ "Reserved by: " + reservation.name+ "</div>");
-
       seat.removeClass("inProgress");
       seat.addClass("taken");
-<<<<<<< HEAD
-      $(".seatInfo").css("background-color", "red");
-
-
-=======
       seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
->>>>>>> 1bc32ba91459a0b2be32df5b8d52ce2996aebe49
-
     });
 
     for (var i = 0; i < reservationList.length; i++) {

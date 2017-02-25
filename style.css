@@ -87,9 +87,20 @@ text-align: center;
   display: none;
   margin: auto;
   margin-bottom: 40px;
-  margin-top: 50px;
+  margin-top: 60px;
   width: 550px;
   border: 1px solid a8a8a8;
+}
+
+button {
+    background-color: #007f60;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
 }
 
 li {

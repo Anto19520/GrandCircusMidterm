@@ -31,7 +31,7 @@ $ (document).ready(function(){
     reservationList.forEach(function (reservation) {
       $("#currentRes").append("<div>" + reservation.name+ " "+ reservation.email + " "+ seatID + "</div>");
 
-      $(".seatInfo").append("<div>" + reservation.name+ "</div>"+"<div>"+ seatID +"</div>");
+      seat.find('.seatInfo').append("<div>" + reservation.name+ "</div>"+"<div>"+ seatID +"</div>");
 
       seat.removeClass("inProgress");
       seat.addClass("taken");

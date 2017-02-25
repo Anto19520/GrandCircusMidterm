@@ -36,13 +36,13 @@ $ (document).ready(function(){
 
       seat.removeClass("inProgress");
       seat.addClass("taken");
-<<<<<<< HEAD
-      $(".seatInfo").css("background-color", "red");
+
+      seat.css("background-color", "red");
 
 
-=======
+
       seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
->>>>>>> 1bc32ba91459a0b2be32df5b8d52ce2996aebe49
+
 
     });
 

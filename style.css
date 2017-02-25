@@ -35,7 +35,7 @@ text-align: center;
   margin: auto;
   width: 100%;
   min-width: 900px;
-  height: 600px;
+  height: 1000px;
 }
 
 .row {
@@ -148,6 +148,7 @@ footer {
   line-height: 20px;
   font-size: 15px;
   border-radius: 5px;
+  text-align: center;
   margin: auto;
 }
 

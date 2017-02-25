@@ -1,5 +1,6 @@
 $ (document).ready(function(){
 
+//Hide/Show Seat Legend
   $(".btn1").click(function(){
         $("#legend2").fadeOut()
     });
@@ -7,8 +8,10 @@ $ (document).ready(function(){
         $("#legend2").fadeIn();
     });
 
+//Declare array for reservations
   var reservationList=[];
 
+//Show Seat Number on hover
   $( '.seat' ).on({
     mouseenter: function() {
       $(this).find(".seatInfo").css("visibility","visible");
@@ -17,11 +20,13 @@ $ (document).ready(function(){
     }
   });
 
+//Put seat into pending status on click
   $('.seat').on('click',function(){
     $('.form').css("display","block");
     $(this).addClass('inProgress');
   });
 
+//Collect form submission and push into an array on Submit click
   $('#subButton').on('click',function(){
     var reservationName = $('#name').val();
     var reservationEmail = $('#email').val();
@@ -35,16 +40,26 @@ $ (document).ready(function(){
     };
       reservationList.push(reservation);
       console.log(reservationList);
+
+      //Add reservation to reservation list at bottom of page
       $("#currentRes").append("<div>" + reservation.name + " reserved " + seatInfo + "</div>");
+
+      //Add reservation info to each seat (shown on hover)
       seat.find('.seatInfo').append("<div>"+ "Reserved by: " + reservation.name+ "</div>");
+
+      //Remove class for pending reservation and add class for reserved seat
       seat.removeClass("inProgress");
       seat.addClass("taken");
+
+      //Change status on seat from available to reserved
       seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
+
+      //Hide form on submit
       $('.form').css("display","none");
+
+      //Clear form values on submit
       $('#name').val("");
       $('#email').val("");
-      $(".seatInfo").css("background-color");
-      seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
   });
 
 

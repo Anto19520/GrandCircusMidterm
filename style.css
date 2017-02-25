@@ -138,3 +138,17 @@ footer {
   text-align: center;
   margin-top: 50px;
 }
+
+.screen
+{
+  width: 80%;
+  height: 20px;
+  background:#a8a8a8;
+  color: #fff;
+  line-height: 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+}

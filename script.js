@@ -1,5 +1,12 @@
 $ (document).ready(function(){
 
+  $(".btn1").click(function(){
+        $("#legend2").fadeOut()
+    });
+    $(".btn2").click(function(){
+        $("#legend2").fadeIn();
+    });
+
   var reservationList=[];
 
   $( '.seat' ).on({
@@ -35,6 +42,7 @@ $ (document).ready(function(){
       seat.find('.seatInfo').append("<div>"+ "Reserved by: " + reservation.name+ "</div>");
       seat.removeClass("inProgress");
       seat.addClass("taken");
+<<<<<<< HEAD
       seat.css("background-color", "red");
       seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
 
@@ -48,6 +56,21 @@ $ (document).ready(function(){
 
   //  });
 
+=======
+
+
+      $(".seatInfo").css("background-color");
+
+
+
+      seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
+
+
+
+      seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
+
+    });
+>>>>>>> 5723f50c1aa4bfc25a83e4ba0ef695a0cf7a0041
 
     for (var i = 0; i < reservationList.length; i++) {
       console.log(reservationList[i].name);

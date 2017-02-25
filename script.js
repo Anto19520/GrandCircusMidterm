@@ -29,6 +29,10 @@ $ (document).ready(function(){
     reservationList.push(reservation);
     console.log(reservationList);
 
+    $('.form').css("display","none");
+    $('#name').val("");
+    $('#email').val("");
+
     reservationList.forEach(function (reservation) {
       $("#currentRes").append("<div>" + reservation.name + " reserved " + seatInfo + "</div>");
       seat.find('.seatInfo').append("<div>"+ "Reserved by: " + reservation.name+ "</div>");

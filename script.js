@@ -28,6 +28,7 @@ $ (document).ready(function(){
 
 //Collect form submission and push into an array on Submit click
   $('#subButton').on('click',function(){
+    event.preventDefault();
     var reservationName = $('#name').val();
     var reservationEmail = $('#email').val();
     var seat = $('.inProgress');
@@ -60,6 +61,8 @@ $ (document).ready(function(){
       //Clear form values on submit
       $('#name').val("");
       $('#email').val("");
+
+      $('.taken').off('click');
   });
 
 

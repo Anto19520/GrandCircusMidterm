@@ -11,7 +11,7 @@ $ (document).ready(function(){
   });
 
   $('.seat').on('click',function(){
-    $('.form').css("visibility","visible");
+    $('.form').css("display","block");
     $(this).addClass('inProgress');
   });
 
@@ -35,6 +35,7 @@ $ (document).ready(function(){
 
       seat.removeClass("inProgress");
       seat.addClass("taken");
+      $(".seatInfo").css("background-color", "red");
 
 
 

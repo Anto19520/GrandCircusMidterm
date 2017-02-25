@@ -22,7 +22,7 @@ $ (document).ready(function(){
     $(this).addClass('inProgress');
   });
 
-  $('button').on('click',function(){
+  $('#subButton').on('click',function(){
     var reservationName = $('#name').val();
     var reservationEmail = $('#email').val();
     var seat = $('.inProgress');

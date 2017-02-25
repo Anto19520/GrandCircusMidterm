@@ -76,6 +76,7 @@ body {
 .form {
   visibility: hidden;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 li {

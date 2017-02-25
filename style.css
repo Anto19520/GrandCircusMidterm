@@ -112,3 +112,8 @@ footer {
 .availText {
   display: block;
 }
+
+#currentRes {
+  text-align: center;
+  margin-top: 50px;
+}

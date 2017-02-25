@@ -29,24 +29,25 @@ $ (document).ready(function(){
     reservationList.push(reservation);
     console.log(reservationList);
 
-    reservationList.forEach(function (reservation) {
+
+    //reservationList.forEach(function (reservation) {
       $("#currentRes").append("<div>" + reservation.name + " reserved " + seatInfo + "</div>");
       seat.find('.seatInfo').append("<div>"+ "Reserved by: " + reservation.name+ "</div>");
       seat.removeClass("inProgress");
       seat.addClass("taken");
-
-
       seat.css("background-color", "red");
-
-
-
       seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
 
 
 
-      seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
+    $('.form').css("display","none");
+    $('#name').val("");
+    $('#email').val("");
 
-    });
+
+
+  //  });
+
 
     for (var i = 0; i < reservationList.length; i++) {
       console.log(reservationList[i].name);

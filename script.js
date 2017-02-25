@@ -1,5 +1,12 @@
 $ (document).ready(function(){
 
+  $(".btn1").click(function(){
+        $("#legend2").fadeOut()
+    });
+    $(".btn2").click(function(){
+        $("#legend2").fadeIn();
+    });
+
   var reservationList=[];
 
   $( '.seat' ).on({
@@ -36,13 +43,13 @@ $ (document).ready(function(){
 
       seat.removeClass("inProgress");
       seat.addClass("taken");
-<<<<<<< HEAD
+
       $(".seatInfo").css("background-color", "red");
 
 
-=======
+
       seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
->>>>>>> 1bc32ba91459a0b2be32df5b8d52ce2996aebe49
+
 
     });
 

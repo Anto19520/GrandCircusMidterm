@@ -72,8 +72,13 @@ body {
 }
 
 .form {
-  visibility: hidden;
-  margin-bottom: 100px;
+  display: none;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  width: 550px;
+  border: 3px solid black;
+
 }
 
 li {
@@ -101,4 +106,8 @@ footer {
 .taken {
   background-color: #00ce9b;
   border: 2px solid #00ce9b;
+}
+
+.availText {
+  display: block;
 }

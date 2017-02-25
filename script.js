@@ -31,11 +31,10 @@ $ (document).ready(function(){
 
     reservationList.forEach(function (reservation) {
       $("#currentRes").append("<div>" + reservation.name + " reserved " + seatInfo + "</div>");
-
       seat.find('.seatInfo').append("<div>"+ "Reserved by: " + reservation.name+ "</div>");
-
       seat.removeClass("inProgress");
       seat.addClass("taken");
+
 
       seat.css("background-color", "red");
 
@@ -43,6 +42,9 @@ $ (document).ready(function(){
 
       seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
 
+
+
+      seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
 
     });
 

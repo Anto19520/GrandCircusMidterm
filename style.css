@@ -82,7 +82,6 @@ text-align: center;
 }
 
 .form {
-  visibility: hidden;
   margin-bottom: 100px;
   text-align: center;
   display: none;
@@ -90,8 +89,7 @@ text-align: center;
   margin-bottom: 40px;
   margin-top: 50px;
   width: 550px;
-  border: 3px solid black;
-
+  border: 1px solid a8a8a8;
 }
 
 li {
@@ -123,4 +121,9 @@ footer {
 
 .availText {
   display: block;
+}
+
+#currentRes {
+  text-align: center;
+  margin-top: 50px;
 }

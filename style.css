@@ -102,3 +102,7 @@ footer {
 .taken {
   background-color: red;
 }
+
+.availText {
+  display: block;
+}

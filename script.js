@@ -20,6 +20,7 @@ $ (document).ready(function(){
     var reservationEmail = $('#email').val();
     var seat = $('.inProgress');
     var seatID = seat.attr('id');
+    var seatInfo = seat.attr('name');
     var reservation = {
       name: reservationName,
       email: reservationEmail,
@@ -29,14 +30,13 @@ $ (document).ready(function(){
     console.log(reservationList);
 
     reservationList.forEach(function (reservation) {
-      $("#currentRes").append("<div>" + reservation.name+ " "+ reservation.email + " "+ seatID + "</div>");
+      $("#currentRes").append("<div>" + reservation.name + " reserved " + seatInfo + "</div>");
 
-      seat.find('.seatInfo').append("<div>" + reservation.name+ "</div>"+"<div>"+ seatID +"</div>");
+      seat.find('.seatInfo').append("<div>"+ "Reserved by: " + reservation.name+ "</div>");
 
       seat.removeClass("inProgress");
       seat.addClass("taken");
-
-
+      seat.find('.availText').html("<div>"+"RESERVED"+"</div>");
 
     });
 

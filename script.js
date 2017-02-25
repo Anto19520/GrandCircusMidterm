@@ -18,7 +18,8 @@ $ (document).ready(function(){
   $('button').on('click',function(){
     var reservationName = $('#name').val();
     var reservationEmail = $('#email').val();
-    var seatID = $('.inProgress').attr('id');
+    var seat = $('.inProgress');
+    var seatID = seat.attr('id');
     var reservation = {
       name: reservationName,
       email: reservationEmail,
@@ -27,6 +28,21 @@ $ (document).ready(function(){
     reservationList.push(reservation);
     console.log(reservationList);
 
+    reservationList.forEach(function (reservation) {
+      $("#currentRes").append("<div>" + reservation.name+ " "+ reservation.email + " "+ seatID + "</div>");
+
+      seat.append("<div>" + reservation.name+ "</div>"+"<div>"+ seatID +"</div>");
+
+      seat.removeClass("inProgress");
+      seat.addClass("taken");
+
+
+
+    });
+
+    for (var i = 0; i < reservationList.length; i++) {
+      console.log(reservationList[i].name);
+    }
   });
 
 

@@ -98,3 +98,7 @@ footer {
 .inProgress {
   background-color: yellow;
 }
+
+.taken {
+  background-color: red;
+}

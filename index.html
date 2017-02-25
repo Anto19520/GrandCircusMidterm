@@ -6,16 +6,17 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <meta charset="utf-8">
-    <title>bSeated® | the simplest way to reserve your seats</title>
+    <title>bSeated | the simplest way to reserve your seats</title>
   </head>
   <body>
+
     <div id="wrapperHeader" align="center">
-    <div id="header" align="center">
+   <div id="header" align="center">
     <img src="images/header.png" width="800" height="350" alt="header" align="center"/>
    </div>
   </div>
-    <br>
-  <div id="instructions">
+  <br>
+<div id="instructions">
     <p>
       <ul>
         <li>Step 1: Select the seat you'd like to reserve</li>
@@ -25,6 +26,12 @@
     </p>
     <div class = "screen"> Screen Direction </div>
   </div>
+<div id="legend2"><img src="images/legend2.png" alt="legend"></div>
+<div id="showLegend"><button class="btn1">Hide Legend</button>
+<button class="btn2">Show Legend</button>
+</div>
+
+
     <div class= "container">
 
       <div class="row" id= "rowOne">
@@ -78,15 +85,34 @@
         <div name = "Seat 24" class="seat" id= "row4seat6"><div class="availText">AVAILABLE</div><div class="seatInfo">Seat 24</div></div>
       </div>
 
+    </div>
+
+    <div class="form">
+      <h2>Fill out the form below to reserve your seat:</h2>
+      <form>
+        <p>
+          First Name
+          <input id= "name" type="text" name="Name" placeholder="Enter your name here" value="">
+        </p>
+        <p>
+          Email Address
+          <input id= "email" type="text" name="Name" placeholder="Enter your email here" value="">
+        </p>
+        <button id= "subButton" type="button" name="button">Submit</button>
+      </form>
+  </div>
+
+
       <div id="currentRes">
         <h3>Existing Reservations:</h3>
       </div>
 
     </div>
-<div id="legend"><img src="images/legend.png" alt="legend"></div>
+
+
 
 <footer>  <div class="marquee">
-    <marquee behavior="scroll" direction="right">© 2017 | bSEATED® | DANA, JOHN, ANTO & EMERALD</marquee>
+    <marquee behavior="scroll" direction="right">© 2017 | bSEATED | DANA, JOHN, ANTO & EMERALD</marquee>
     </div></footer>
 
   </body>

@@ -9,16 +9,26 @@ body {
 
 #instructions {
   text-align: center;
+  font-size: 16px;
   margin: auto;
   width: 100%;
   min-width: 900px;
 }
 
-#legend {
+#legend2 {
+  text-align: center;
+  display: none;
+}
+
+#showLegend {
+text-align: center;
+}
+
+/*#legend {
   float:right;
   margin-top: -580px;
 
-}
+}*/
 
 .container {
   text-align: center;
@@ -79,7 +89,7 @@ body {
   margin-bottom: 40px;
   margin-top: 50px;
   width: 550px;
-  border: 1px solid black;
+  border: 1px solid a8a8a8;
 }
 
 li {
